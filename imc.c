@@ -18,25 +18,25 @@ int main(int argc, char** argv){
     if(imc<16){
         printf("%0.2f Perigo de vida\n", imc);
     }
-    if(imc>=16 && imc<17){
+    else if(imc>=16 && imc<17){
         printf("%0.2f Muito abaixo do peso\n", imc);
     }
-    if (imc>=17 && imc<18,5){
+    else if (imc>=17 && imc<18,5){
         printf("%0.2f Abaixo do peso\n", imc);
     }
-    if (imc>=18,5 && imc<25){
+    else if (imc>=18,5 && imc<25){
         printf("%0.2f Peso normal\n", imc);
     }
-    if (imc>=25 && imc<30){
+    else if (imc>=25 && imc<30){
         printf("%0.2f Acima do peso\n", imc);
     }
-    if (imc>=30 && imc<35){
+    else if (imc>=30 && imc<35){
         printf("%0.2f Obesidade grau I\n", imc);
     }
-    if (imc>=35 && imc<40){
+    else if (imc>=35 && imc<40){
         printf("%0.2f Obesidade grau II\n", imc);
     }
-    if (imc>=40){
+    else if (imc>=40){
         printf("%0.2f Obesidade grau III\n", imc);
     }
     return 0;
