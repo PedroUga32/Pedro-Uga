@@ -27,5 +27,6 @@
     "**/.*/**",
     "**/.vscode",
     "**/.vscode/**"
-  ]
+  ],
+  "git.ignoreLimitWarning": true
 }
