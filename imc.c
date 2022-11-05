@@ -39,5 +39,5 @@ int main(int argc, char** argv){
     if (imc>=40){
         printf("%0.2f Obesidade grau III\n", imc);
     }
-return 0;
+    return 0;
 }
