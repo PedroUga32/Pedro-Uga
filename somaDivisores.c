@@ -15,10 +15,10 @@ int main(int argc, char** argv){
     scanf("%d",&numero);
 
     soma = 1; 
-  for (int i=2 ; i <= (numero/2+1) ; i++ ) {
-    if ( numero % i == 0 ) {
-      soma += i;
-    }
+    for (int i=2 ; i <= (numero/2+1) ; i++ ) {
+        if ( numero % i == 0 ) {
+            soma += i;
+        }
   }
   printf("A soma dos divisores é %d\n",soma + numero);
 return 0;
