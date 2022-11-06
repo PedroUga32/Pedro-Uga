@@ -14,6 +14,6 @@ int main(int argc, char** argv){
     for ( i = 1; i <= numero; i++){
        fat = fat*i; 
     }
-    printf("%d\n", fat);
+    printf("%d! = %d\n", numero, fat);
     return 0;
 }
