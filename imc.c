@@ -9,35 +9,37 @@
 
 int main(int argc, char** argv){
 
-    float peso=0.0, imc=0,altura=0;
+    float peso, imc,altura;
+    printf("Digite seu peso: ");
     scanf("%f",&peso);
+    printf("Digite sua Altura: ");
     scanf("%f",&altura);
 
-    imc = (peso)/(altura*altura);
+    imc = peso/ (altura*altura);
 
-    if(imc<16){
-        printf("%0.2f (Perigo de vida)\n", imc);
+    if(imc < 16){
+        printf("%0.2f (Perigo de vida)", imc);
     }
-    else if((imc>=16) && (imc<17)){
-        printf("%0.2f (Muito abaixo do peso)\n", imc);
+    if(16 <= imc && imc < 17){
+        printf("%0.2f (Muito abaixo do peso)", imc);
     }
-    else if ((imc>=17) && (imc<18,5)){
-        printf("%0.2f (Abaixo do peso)\n", imc);
+    if(17 <= imc && imc < 18.5){
+        printf("%0.2f (Abaixo do peso)", imc);
     }
-    else if ((imc>=18,5) && (imc<25)){
-        printf("%0.2f (Peso normal)\n", imc);
+    if(18.5 <= imc && imc < 25){
+        printf("%0.2f (Peso normal)", imc);
     }
-    else if ((imc>=25) && (imc<30)){
-        printf("%0.2f (Acima do peso)\n", imc);
+    if(25 <= imc && imc < 30){
+        printf("%0.2f (Acima do peso)", imc);
     }
-    else if ((imc>=30) && (imc<35)){
-        printf("%0.2f (Obesidade grau I)\n", imc);
+    if(30 <= imc && imc < 35){
+        printf("%0.2f (Obesidade grau I)", imc);
     }
-    else if ((imc>=35) && (imc<40)){
-        printf("%0.2f (Obesidade grau II)\n", imc);
+    if(35 <= imc && imc < 40){
+        printf("%0.2f (Obesidade grau II)", imc);
     }
-    else if (imc>=40){
-        printf("%0.2f (Obesidade grau III)\n", imc);
+    if(imc >= 40){
+        printf("%0.2f (Obesidade grau III)", imc);
     }
     return 0;
 }
