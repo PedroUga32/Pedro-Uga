@@ -19,7 +19,7 @@ int fib(int n)
   return fib2;
 }
 
-int main(void)
+int main(int argc, char** argv)
 {
   int n;
   scanf("%d", &n);
