@@ -5,24 +5,27 @@
 * Lab 1
 */
 #include <stdio.h>
-#include <stdint.h>
+#include <stdlib.h>
+#include <math.h>
 
-int fib(int n)
-{
-  int i, fib1 = 1, fib2 = 1, soma;
-  for (i = 3; i <= n; i = i + 1)
-  {
-    soma = fib1 + fib2;
-    fib1 = fib2;
-    fib2 = soma;
-  }
-  return fib2;
-}
+main(int argc, char** argv) {
 
-int main(int argc, char** argv)
-{
-  int n;
-  scanf("%d", &n);
-  printf("%d\n", fib(n));
-  return 0;
+    int a, b, auxiliar, i, n;
+
+    a = 0;
+    b = 1;
+
+    printf("Digite um número: ");
+    scanf("%d", &n);
+    printf("Série de Fibonacci:\n");
+    printf("%d\n", b);
+
+    for(i = 0; i < n; i++) {
+
+        auxiliar = a + b;
+        a = b;
+        b = auxiliar;
+        printf("%d\n", auxiliar);
+        
+    }
 }
