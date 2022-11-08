@@ -18,9 +18,13 @@ main(int argc, char** argv) {
     printf("Digite um número: ");
     scanf("%d", &n);
     printf("Série de Fibonacci:\n");
-    printf("%d\n", b);
-
-    for(i = 0; i < n; i++) {
+    if (n>=0){
+        printf("%d\n",a);
+    }
+    if (n>=1){
+        printf("%d\n", b);
+    }
+    for(i = 2; i < n; i++) {
 
         auxiliar = a + b;
         a = b;
