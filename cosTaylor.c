@@ -7,9 +7,9 @@ int main(void)
     int i, n, t1 = 0, t2 = 1, nextTerm;
     double x, pi, cosx, term;
 
-    printf("Enter the number of terms: ");
+    printf("Numero de termos: ");
     scanf("%d", &n);
-    printf("Enter the value of x: ");
+    printf("Fator de x: ");
     scanf("%lf", &x);
     pi = 3.14159265358979323846;
     x = x * pi;
