@@ -1,4 +1,9 @@
-
+/*
+* Arquivo: cosTaylor.c
+* Data Criação: 03/nov/2022
+* Autor: Pedro Uga 
+* Lab 1
+*/
 #include <stdio.h>
 #include <math.h>
 
