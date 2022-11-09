@@ -20,6 +20,6 @@ int main(void)
         term = term * (-1) * x * x / (2 * i * (2 * i - 1));
         cosx = cosx + term;
     }
-    printf("%lf", cosx);
+    printf("%0.5lf", cosx);
     return 0;
 }
