@@ -1,34 +1,25 @@
+
 #include <stdio.h>
 #include <math.h>
 
-/*long int fatorial(int n){
-    long int fat = n * (n - 1);
-    if(n == 0 || fat == 0)
-        fat = 1.0;
-
-    return fat;}*/
-
-long fat(int n) {
-    if(n < 2)
-        return 1;
-    else
-        return n * fat(n-1);    //return (n < 2) ? 1 : n * fat(n-1); 
-    }
-
-
-int main()
+int main(void)
 {
-    double x, z = 0.0;
-    int n, i, j;
-    scanf("%lf%d", &x, &n);
+    int i, n, t1 = 0, t2 = 1, nextTerm;
+    double x, pi, cosx, term;
 
-    for(i = 0; i < n; i++ )
+    printf("Enter the number of terms: ");
+    scanf("%d", &n);
+    printf("Enter the value of x: ");
+    scanf("%lf", &x);
+    pi = 3.14159265358979323846;
+    x = x * pi;
+    cosx = 1;
+    term = 1;
+    for (i = 1; i <= n; ++i)
     {
-        z = z + ( ( pow(-1.0 , i)*pow(x, (2.0*i)) ) / (fat(2*i)) ); 
-        //printf("\n\t%ld", fat(2*i)); //debug
+        term = term * (-1) * x * x / (2 * i * (2 * i - 1));
+        cosx = cosx + term;
     }
-
-        printf("\n\ncos(x) = %lf\n", z );
-
+    printf("%lf", cosx);
     return 0;
 }
