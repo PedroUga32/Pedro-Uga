@@ -28,5 +28,6 @@
     "**/.vscode",
     "**/.vscode/**"
   ],
-  "git.ignoreLimitWarning": true
+  "git.ignoreLimitWarning": true,
+  "C_Cpp.errorSquiggles": "Disabled"
 }
