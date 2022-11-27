@@ -19,7 +19,6 @@ int main (void)
   printf("Escolha um número para iniciar a sequência de Hailstone: ");
   scanf("%d", &numero);
   soma = Hailstone(numero);
-
   printf("%d", soma);
 
   return 0;
