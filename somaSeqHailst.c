@@ -1,16 +1,17 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int Hailstone (int n)
-{
-  if (n % 2 == 0) {
-    return n = n/2;
-  }
-  else {
-    return n = (3 * n) + 1;
-  }
-  return n;
-}
+int Hailstone (int numero)
+    while (numero != 1)
+    {
+        if (numero % 2 == 0) {
+            numero = numero/2;
+        }
+        else {
+            numero = (3 * numero) + 1;
+        }
+        return numero;
+    }
 
 int main (void)
 {
