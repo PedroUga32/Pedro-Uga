@@ -1,3 +1,9 @@
+/*
+* Arquivo: Somaprimos.c
+* Data Criação: 24/nov/2022
+* Autor: Pedro Uga 
+* Lab 2
+*/
 #include <stdio.h>
 #include <stdbool.h>
 
