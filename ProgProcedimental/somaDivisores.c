@@ -20,6 +20,6 @@ int main(int argc, char** argv){
             soma += i;
         }
   }
-  printf("A soma dos divisores é %d\n",soma + numero);
+  printf("%d\n",soma + numero);
 return 0;
 }
