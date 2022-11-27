@@ -1,26 +1,25 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int Hailstone (numero)
-    int count = 1;
-    while (numero != 1){
+int Hailstone (numero){
+    while(numero > 1){
         if (numero % 2 == 0) {
             numero = numero/2;
         }
         else {
             numero = (3 * numero) + 1;
         }
-        return numero;
-    count = count + 1;
+        printf("%d ", numero);
     }
+}
 
 int main (void){
-  int numero, soma,count;
+  int numero, soma;
 
-  printf("Escolha um número para iniciar a sequência de Hailstone: ");
+  printf("Escolha um numero para iniciar a sequencia de Hailstone: ");
   scanf("%d", &numero);
+  printf("%d ", numero);
   soma = Hailstone(numero);
-  printf("%d", soma);
 
   return 0;
 }
