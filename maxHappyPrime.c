@@ -15,8 +15,8 @@ int main(void)
 {
     int numero, numeroprimofeliz;
 
-    printf("Digite um numero a ser avaliado:\n");
-    scanf("%d ", &numero);
+    printf("Digite um numero a ser avaliado: ");
+    scanf("%d ",&numero);
 
     numeroprimofeliz = maiorprimofeliz(numero);
 
