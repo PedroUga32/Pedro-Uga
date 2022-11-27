@@ -4,7 +4,7 @@
 int Hailstone (int n)
 {
   if (n % 2 == 0) {
-    return n /= 2;
+    return n = n/2;
   }
   else {
     return n = (3 * n) + 1;
