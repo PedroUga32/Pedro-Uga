@@ -29,7 +29,7 @@ int main(void)
     return 0;
 }
 
-int numfeliz(numeroi){
+int numfeliz(numeroi){// casos em que o resultado já é conhecido e a ultima opção que n conhecemos
     int somadigitos;
 
     somadigitos = somaquadrados(numeroi);
@@ -45,7 +45,7 @@ int numfeliz(numeroi){
     }
 }
 
-int somaquadrados(numero){
+int somaquadrados(numero){// aplicando formula 
     int soma = 0, digito;
 
     for(numero;numero>=1; numero = numero/10){
@@ -54,7 +54,7 @@ int somaquadrados(numero){
     return soma;
 }
 
-int primo(numero){
+int primo(numero){// programa antigo , apenas reutilizado
     int i = 2;
     while (i<numero){
         if (numero%i == 0)
@@ -71,7 +71,7 @@ int primo(numero){
     }
 }
 
-int maiorprimofeliz(numero){
+int maiorprimofeliz(numero){// condição e resultado final juntando resultado de duas função para achar o objetivo
     for (numero;  numero>0; numero--){
         if (primo(numero) & numfeliz(numero)){
             return numero;
