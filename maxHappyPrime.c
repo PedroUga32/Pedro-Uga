@@ -15,17 +15,15 @@ int main(void)
 {
     int numero, numeroprimofeliz;
 
-    printf("Digite um número a ser avaliado: ");
-    scanf("&d ", &numero);
+    printf("Digite um numero a ser avaliado:\n");
+    scanf("%d ", &numero);
 
     numeroprimofeliz = maiorprimofeliz(numero);
 
-    if (numeroprimofeliz == 0)
-    {
+    if (numeroprimofeliz == 0){
         printf("0***");
     }
-    else
-    {
+    else{
         printf("%d ", numeroprimofeliz);
     }
     return 0;
@@ -36,15 +34,13 @@ int numfeliz(numeroi){
 
     somadigitos = somaquadrados(numeroi);
 
-    if (somadigitos == 1)
-    {
+    if (somadigitos == 1){
         return 1;
     }
     else if(somadigitos == 4){
         return 0;
     }
-    else
-    {
+    else{
         return numfeliz(somadigitos);
     }
 }
@@ -60,29 +56,24 @@ int somaquadrados(numero){
 
 int primo(numero){
     int i = 2;
-    while (i<numero)
-    {
+    while (i<numero){
         if (numero%i == 0)
         {
             return 0;
         }
         i = i +1;  
     }
-    if (numero != 1)
-    {
+    if (numero != 1){
         return 1;
     }
-    else
-    {
+    else{
         return 0;
     }
 }
 
 int maiorprimofeliz(numero){
-    for (numero;  numero>0; numero--)
-    {
-        if (primo(numero)& numfeliz(numero))
-        {
+    for (numero;  numero>0; numero--){
+        if (primo(numero) & numfeliz(numero)){
             return numero;
         }
     }
