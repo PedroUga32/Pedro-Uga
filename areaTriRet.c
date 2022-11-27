@@ -7,7 +7,7 @@
 
 #include <stdio.h>
 
-int main(){
+int main(void){
 
     float xA, xB, xC,yA,yB,yC,area;
 

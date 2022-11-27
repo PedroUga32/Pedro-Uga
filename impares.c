@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <stdint.h>
 
-int main(){
+int main(void){
     int menor,maior;
     printf("Digite o menor e o maior valor do intervalo analisado: ");
     scanf("%d %d", &menor, &maior);
