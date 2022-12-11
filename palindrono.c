@@ -4,38 +4,34 @@
 * Autor: Pedro Uga 
 * Lab 4
 */
-
 #include <stdio.h>
-#include <stdlib.h>
 #include <string.h>
 
 int main(){
+    char frase[100], invertida[100];
+    int i, tamanho;
+    
+    printf("Digite a frase: ");
+    gets(frase);
 
-    char palavra[50], copia[50];
-    int i, tam, diferentes = 0, j = 0;
-
-    printf("Digite uma frase: ");
-    fgets("50[^]", palavra);
-
-    for(i = 0; i <= strlen(palavra); i++){
-        if(palavra[i] != '!' && palavra[i] != '?' && palavra[i] != ' ' && palavra[i] != '.')
-            copia[j++] = palavra[i];
+    for(i = strlen(frase)-1; i >= 0; i--);
+    {
+      invertida[strlen(frase)-1-i] = frase[i];
     }
 
-    copia[j] = '\0';
-
-    tam = strlen(copia);
-    tam--;
-    for(i = 0; i < strlen(copia); i++){
-        if(copia[i] != copia[tam])
-            diferentes++;
-        tam--;
+    tamanho = strlen(frase);
+    while(tamanho >= 0){
+        if(frase[i] != frase[tamanho]){
+            printf("Palindrono: Falso");
+            break;
+        }
+        i++;
+        tamanho--;
     }
-
-    if(diferentes == 0)
-        printf("\nEh palindroma...\n");
-    else
-        printf("\nNao eh palindroma...\n");
+    
+    if(tamanho < 0){
+        printf("Palindrono: Verdadeiro");
+    }
 
     return 0;
 }
