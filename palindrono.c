@@ -32,6 +32,5 @@ int main(){
     if(tamanho < 0){
         printf("Palindrono: Verdadeiro");
     }
-
     return 0;
 }
