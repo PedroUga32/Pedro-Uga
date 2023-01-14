@@ -19,7 +19,7 @@ int main(int argc, char** argv){
     scanf("%d%*c", &numero);
 
     v = malloc (numero * sizeof (int ));
-    srand(n);
+    srand(numero);
 
     for (int i = 0; i<numero;i++){
         v[i] = rand() % numero;
@@ -60,6 +60,6 @@ double media(int *v, int numero){
         soma = soma+v[i];
     }
     resmedia = soma/numero;
-    return r;
+    return resmedia;
 }
 
