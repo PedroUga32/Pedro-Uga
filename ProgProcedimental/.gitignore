@@ -1,4 +1,7 @@
-*.exe .gitignore
+*.exe
+
+.vscode/settings.json
+*.txt
 
 
 
